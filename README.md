@@ -1,4 +1,4 @@
-# ?? Huwaal Tech - Web Agency Portfolio
+﻿# Huwaal Tech - Web Agency Portfolio
 
 <div align="center">
 
@@ -9,55 +9,53 @@
 
 **A modern, sleek portfolio website for Huwaal Tech web agency**
 
-*Stunning dark theme � Purple/Pink gradients � Smooth animations � Fully responsive*
-
-[View Live Demo](https://suhayblegend.github.io/Huwaal-Tech/) � [Report Bug](https://github.com/suhayblegend/Huwaal-Tech/issues) � [Request Feature](https://github.com/suhayblegend/Huwaal-Tech/issues)
+*Stunning dark theme - Purple/Pink gradients - Smooth animations - Fully responsive*
 
 </div>
 
 ---
 
-## ? Features
+## Features
 
-- ?? **Modern Dark Theme** - Sleek design with purple/pink gradient accents
-- ?? **Fully Responsive** - Looks great on all devices
-- ?? **Smooth Animations** - Engaging scroll and hover effects
-- ?? **Project Showcases** - Interactive portfolio with live previews
-- ?? **Case Studies** - Detailed project breakdowns
-- ?? **Team Section** - Meet the talented team
-- ?? **Contact Form** - Easy way for clients to reach out
-- ? **Fast & Lightweight** - Pure HTML, CSS, and JavaScript
+- **Modern Dark Theme** - Sleek design with purple/pink gradient accents
+- **Fully Responsive** - Looks great on all devices
+- **Smooth Animations** - Engaging scroll and hover effects
+- **Project Showcases** - Interactive portfolio with live previews
+- **Case Studies** - Detailed project breakdowns
+- **Team Section** - Meet the talented team
+- **Contact Form** - Easy way for clients to reach out
+- **Fast & Lightweight** - Pure HTML, CSS, and JavaScript
 
-## ??? Preview
+## Preview
 
 | Hero Section | Portfolio Grid |
 |:---:|:---:|
 | Dark gradient hero with animated elements | Interactive project cards with hover effects |
 
-## ??? Tech Stack
+## Tech Stack
 
 - **HTML5** - Semantic markup
 - **CSS3** - Modern features (Grid, Flexbox, Variables, Animations)
 - **JavaScript (ES6+)** - Vanilla JS for interactivity
 - **Fonts** - Inter & Space Grotesk
 
-## ?? Project Structure
+## Project Structure
 
 ```
 Huwaal-Tech/
-+-- index.html          # Main landing page
-+-- case-studies.html   # All case studies
-+-- case-*.html         # Individual case study pages
-+-- privacy.html        # Privacy policy
-+-- terms.html          # Terms of service
-+-- css/
-�   +-- style.css       # All styles
-+-- js/
-�   +-- main.js         # JavaScript functionality
-+-- assets/             # Images and media
+├── index.html          # Main landing page
+├── case-studies.html   # All case studies
+├── case-*.html         # Individual case study pages
+├── privacy.html        # Privacy policy
+├── terms.html          # Terms of service
+├── css/
+│   └── style.css       # All styles
+├── js/
+│   └── main.js         # JavaScript functionality
+└── assets/             # Images and media
 ```
 
-## ?? Quick Start
+## Quick Start
 
 1. **Clone the repository**
    ```bash
@@ -71,7 +69,7 @@ Huwaal-Tech/
    # Or use Live Server in VS Code
    ```
 
-## ?? Featured Projects
+## Featured Projects
 
 | Project | Description |
 |---------|-------------|
@@ -84,29 +82,25 @@ Huwaal-Tech/
 | **Purity Guard** | Chrome extension for content filtering |
 | **Chateo** | Flutter messaging application |
 
-## ?? The Team
+## The Team
 
 - **Suhayb Dahir** - Lead Developer
 - **Abdirahman Mohamoud** - Web Developer/Designer
 - **Fardowso Omar** - Graphic Designer
 - **Welly** - UI/UX Designer
 
-## ?? License
+## License
 
 This project is open source and available under the [MIT License](LICENSE).
 
-## ?? Connect With Us
+## Contact
 
-- ?? Email: huwaaltechnology@gmail.com
-- ?? Phone: +252 61 790 1465
-- ?? Location: Mogadishu, Somalia
+Email: suhaybdahir22@gmail.com
 
 ---
 
 <div align="center">
 
-**Made with ?? by Huwaal Tech**
-
-? Star this repo if you like it!
+**Made with love by Huwaal Tech**
 
 </div>
