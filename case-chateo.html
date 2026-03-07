@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chateo Case Study - Secure end-to-end encrypted messaging app built with Flutter">
+    <title>Chateo Case Study | Huwaal Tech</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="case-page">
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="loader">
+            <span class="loader-text">HUWAAL</span>
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+
+    <!-- Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-dark" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-text">HUWAAL</span>
+                <span class="logo-dot">.</span>
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="index.html#services" class="nav-link">Services</a></li>
+                <li><a href="index.html#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="case-studies.html" class="nav-link active">Case Studies</a></li>
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <a href="index.html#contact" class="nav-cta">Let's Talk</a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Case Study Hero -->
+    <section class="case-single-hero" style="--case-color: #06b6d4;">
+        <div class="hero-bg">
+            <div class="case-gradient" style="background: linear-gradient(135deg, #06b6d4 0%, #0891b2 50%, #0e7490 100%);"></div>
+            <div class="hero-grid"></div>
+            <div class="case-shapes">
+                <div class="case-shape shape-1"></div>
+                <div class="case-shape shape-2"></div>
+                <div class="case-shape shape-3"></div>
+                <div class="case-shape shape-4"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="case-single-header">
+                <a href="case-studies.html" class="back-link">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 12H5M12 19l-7-7 7-7"/>
+                    </svg>
+                    <span>All Case Studies</span>
+                </a>
+                <span class="case-category-tag">◆ Mobile App • Capstone Project</span>
+                <h1 class="case-single-title">Chateo 🔒</h1>
+                <p class="case-single-tagline">Secure End-to-End Encrypted Messaging</p>
+                <div class="case-meta">
+                    <div class="meta-item">
+                        <span class="meta-label">Project</span>
+                        <span class="meta-value">Capstone Project</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Year</span>
+                        <span class="meta-value">2025-2026</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Platform</span>
+                        <span class="meta-value">Android & iOS</span>
+                    </div>
+                </div>
+                <span class="case-live-btn coming-soon-btn" style="background: rgba(255,255,255,0.2); cursor: default;">
+                    <span>🚀 Coming Soon to Play Store</span>
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Study Content -->
+    <section class="case-single-content">
+        <div class="container">
+            
+            <!-- App Preview -->
+            <article class="case-block overview-block">
+                <div class="block-header">
+                    <span class="block-number">01</span>
+                    <h2>App Preview</h2>
+                </div>
+                <div class="block-content">
+                    <div style="text-align: center; margin-bottom: 40px;">
+                        <img src="assets/chateo.jpeg" alt="Chateo App Preview" style="max-width: 100%; border-radius: 16px; box-shadow: 0 20px 60px rgba(0,0,0,0.4);">
+                    </div>
+                    <div class="overview-text">
+                        <p class="lead">Chateo is a secure messaging application I developed as my capstone project. The app features military-grade AES-256 encryption, ensuring that all messages remain private and secure between users.</p>
+                        <p>Built with Flutter for cross-platform compatibility, Chateo combines modern UI design with robust security features, making secure communication accessible to everyone on both Android and iOS.</p>
+                    </div>
+                    <div class="overview-stats">
+                        <div class="stat-card" style="--accent: #06b6d4;">
+                            <span class="stat-value">AES-256</span>
+                            <span class="stat-label">Encryption</span>
+                        </div>
+                        <div class="stat-card" style="--accent: #06b6d4;">
+                            <span class="stat-value">2</span>
+                            <span class="stat-label">Platforms</span>
+                        </div>
+                        <div class="stat-card" style="--accent: #06b6d4;">
+                            <span class="stat-value">Real-time</span>
+                            <span class="stat-label">Messaging</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Challenge -->
+            <article class="case-block challenge-block">
+                <div class="block-header">
+                    <span class="block-number">02</span>
+                    <h2>The Challenge</h2>
+                </div>
+                <div class="block-content">
+                    <div class="challenge-grid">
+                        <div class="challenge-item">
+                            <div class="challenge-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"/>
+                                </svg>
+                            </div>
+                            <h4>Privacy Concerns</h4>
+                            <p>Many messaging apps lack proper end-to-end encryption or have complex privacy policies.</p>
+                        </div>
+                        <div class="challenge-item">
+                            <div class="challenge-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/>
+                                </svg>
+                            </div>
+                            <h4>Security vs UX</h4>
+                            <p>Balancing strong security features with an intuitive, user-friendly interface.</p>
+                        </div>
+                        <div class="challenge-item">
+                            <div class="challenge-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3"/>
+                                </svg>
+                            </div>
+                            <h4>Cross-Platform</h4>
+                            <p>Building a single codebase that works seamlessly on both Android and iOS devices.</p>
+                        </div>
+                        <div class="challenge-item">
+                            <div class="challenge-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/>
+                                </svg>
+                            </div>
+                            <h4>Real-time Performance</h4>
+                            <p>Ensuring instant message delivery while maintaining encryption overhead.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Solution -->
+            <article class="case-block solution-block">
+                <div class="block-header">
+                    <span class="block-number">03</span>
+                    <h2>The Solution</h2>
+                </div>
+                <div class="block-content">
+                    <div class="solution-features">
+                        <div class="solution-item">
+                            <div class="solution-number">01</div>
+                            <div class="solution-content">
+                                <h4>AES-256 End-to-End Encryption</h4>
+                                <p>Military-grade encryption ensures all messages are completely secure. Only the sender and recipient can read the messages — not even the server can decrypt them.</p>
+                            </div>
+                        </div>
+                        <div class="solution-item">
+                            <div class="solution-number">02</div>
+                            <div class="solution-content">
+                                <h4>Real-Time Messaging with Socket.IO</h4>
+                                <p>Instant message delivery with read receipts and typing indicators. Messages appear in real-time without any noticeable delay.</p>
+                            </div>
+                        </div>
+                        <div class="solution-item">
+                            <div class="solution-number">03</div>
+                            <div class="solution-content">
+                                <h4>Firebase Authentication</h4>
+                                <p>Secure user authentication with Firebase ensures only authorized users can access the app. Supports email/password and social login options.</p>
+                            </div>
+                        </div>
+                        <div class="solution-item">
+                            <div class="solution-number">04</div>
+                            <div class="solution-content">
+                                <h4>Flutter Cross-Platform Development</h4>
+                                <p>Single codebase powers both Android and iOS apps with native performance. Material Design ensures a modern, intuitive user interface.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Tech Stack -->
+            <article class="case-block tech-block">
+                <div class="block-header">
+                    <span class="block-number">04</span>
+                    <h2>Technology Stack</h2>
+                </div>
+                <div class="block-content">
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <div class="tech-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M14.314 0L2.3 12 6 15.7 21.684.013h-7.357zm.014 11.072L7.857 17.53l6.47 6.47H21.7l-6.46-6.468 6.46-6.46h-7.386z"/>
+                                </svg>
+                            </div>
+                            <span>Flutter</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M4.105 4.105S9.158 1.58 11.684.316a3.079 3.079 0 011.481-.315c.766.047 1.677.788 1.677.788L24 9.948v9.789h-4.263V24H9.789l-9-9L4.105 4.105z"/>
+                                </svg>
+                            </div>
+                            <span>Dart</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M3.89 15.672L6.255.461A.542.542 0 017.27.288l2.543 4.771zm16.794 3.692l-2.25-14a.54.54 0 00-.919-.295L3.316 19.365l7.856 4.427a1.621 1.621 0 001.588 0zM14.3 7.147l-1.82-3.482a.542.542 0 00-.96 0L3.53 17.984z"/>
+                                </svg>
+                            </div>
+                            <span>Firebase</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"/>
+                                </svg>
+                            </div>
+                            <span>AES-256</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-.052 19.95c-4.397 0-7.95-3.553-7.95-7.95s3.553-7.95 7.95-7.95 7.95 3.553 7.95 7.95-3.553 7.95-7.95 7.95z"/>
+                                </svg>
+                            </div>
+                            <span>Socket.IO</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Results -->
+            <article class="case-block results-block">
+                <div class="block-header">
+                    <span class="block-number">05</span>
+                    <h2>Key Features</h2>
+                </div>
+                <div class="block-content">
+                    <div class="results-grid">
+                        <div class="result-card">
+                            <div class="result-icon">🔐</div>
+                            <span class="result-value">100%</span>
+                            <span class="result-label">End-to-End Encrypted</span>
+                        </div>
+                        <div class="result-card">
+                            <div class="result-icon">📱</div>
+                            <span class="result-value">2</span>
+                            <span class="result-label">Platforms Supported</span>
+                        </div>
+                        <div class="result-card">
+                            <div class="result-icon">⚡</div>
+                            <span class="result-value">Real-time</span>
+                            <span class="result-label">Message Delivery</span>
+                        </div>
+                        <div class="result-card">
+                            <div class="result-icon">✓</div>
+                            <span class="result-value">Read</span>
+                            <span class="result-label">Receipts Included</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-block">
+                        <div class="quote-icon">"</div>
+                        <blockquote>
+                            Privacy is not something that I'm merely entitled to, it's an absolute prerequisite.
+                        </blockquote>
+                        <div class="testimonial-author">
+                            <span class="author-name">Marlon Brando</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Next Case Study -->
+    <section class="next-case">
+        <div class="container">
+            <div class="next-case-content">
+                <span class="next-label">Next Case Study</span>
+                <h3 class="next-title">Walaal Connect</h3>
+                <p class="next-description">The only Somali-first fundraising platform</p>
+                <a href="case-walaal.html" class="btn btn-primary">
+                    <span>View Case Study</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-text">HUWAAL</span>
+                        <span class="logo-dot">.</span>
+                    </a>
+                    <p class="footer-description">
+                        Crafting digital experiences that inspire and transform. Let's build something amazing together.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#portfolio">Portfolio</a></li>
+                        <li><a href="case-studies.html">Case Studies</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Huwaal Tech. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
