@@ -73,12 +73,12 @@ Huwaal-Tech/
 
 | Project | Description |
 |---------|-------------|
-| **Dua & Azkar** | Islamic app with 50K+ downloads |
-| **Egeh Express** | Logistics & delivery platform |
-| **FIMAM** | Financial institution website |
-| **SomStruc** | Construction company platform |
-| **Walaal Connect** | Social networking app |
-| **UNISOM** | University management system |
+| **Walaal Connect** | Social networking platform |
+| **UNISOM Admissions** | University admissions system |
+| **Dua Exchange** | Islamic dua sharing platform |
+| **Egeh Agency** | Agency website |
+| **Fimam Jewels** | Jewelry e-commerce store |
+| **SomStruc** | Construction company website |
 | **Purity Guard** | Chrome extension for content filtering |
 | **Chateo** | Flutter messaging application |
 
