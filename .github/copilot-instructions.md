@@ -1,7 +1,7 @@
-# Huwaal Tech - Web Agency Portfolio
+# Egeh Agency - Web Agency Portfolio
 
 ## Project Overview
-A modern, sleek portfolio website for Huwaal Tech web agency featuring stunning UI/UX design with animations, gradients, and responsive layout.
+A modern, sleek portfolio website for Egeh Agency web agency featuring stunning UI/UX design with animations, gradients, and responsive layout.
 
 ## Tech Stack
 - HTML5

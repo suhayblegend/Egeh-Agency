@@ -1,13 +1,13 @@
-﻿# Huwaal Tech - Web Agency Portfolio
+# Egeh Agency - Web Agency Portfolio
 
 <div align="center">
 
-![Huwaal Tech](https://img.shields.io/badge/Huwaal-Tech-6366f1?style=for-the-badge&logo=rocket&logoColor=white)
+![Egeh Agency](https://img.shields.io/badge/Egeh-Agency-6366f1?style=for-the-badge&logo=rocket&logoColor=white)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-**A modern, sleek portfolio website for Huwaal Tech web agency**
+**A modern, sleek portfolio website for Egeh Agency web agency**
 
 *Stunning dark theme - Purple/Pink gradients - Smooth animations - Fully responsive*
 
@@ -42,29 +42,29 @@
 ## Project Structure
 
 ```
-Huwaal-Tech/
-├── index.html          # Main landing page
-├── case-studies.html   # All case studies
-├── case-*.html         # Individual case study pages
-├── privacy.html        # Privacy policy
-├── terms.html          # Terms of service
-├── css/
-│   └── style.css       # All styles
-├── js/
-│   └── main.js         # JavaScript functionality
-└── assets/             # Images and media
+EGEH-Tech/
++-- index.html          # Main landing page
++-- case-studies.html   # All case studies
++-- case-*.html         # Individual case study pages
++-- privacy.html        # Privacy policy
++-- terms.html          # Terms of service
++-- css/
+�   +-- style.css       # All styles
++-- js/
+�   +-- main.js         # JavaScript functionality
++-- assets/             # Images and media
 ```
 
 ## Quick Start
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/suhayblegend/Huwaal-Tech.git
+   git clone https://github.com/suhayblegend/EGEH-Tech.git
    ```
 
 2. **Open in browser**
    ```bash
-   cd Huwaal-Tech
+   cd EGEH-Tech
    # Open index.html in your browser
    # Or use Live Server in VS Code
    ```
@@ -101,6 +101,6 @@ Email: suhaybdahir22@gmail.com
 
 <div align="center">
 
-**Made with love by Huwaal Tech**
+**Made with love by Egeh Agency**
 
 </div>

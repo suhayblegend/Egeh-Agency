@@ -1,5 +1,5 @@
 /**
- * Huwaal Tech - Main JavaScript
+ * Egeh Agency - Main JavaScript
  * Handles all interactive functionality
  */
 
@@ -513,4 +513,4 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 2000);
 });
 
-console.log('🚀 Huwaal Tech website loaded successfully!');
+console.log('🚀 Egeh Agency website loaded successfully!');
