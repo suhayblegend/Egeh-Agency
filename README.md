@@ -1,4 +1,4 @@
-# Egeh Agency - Web Agency Portfolio
+﻿# Egeh Agency - Creative Web Agency
 
 <div align="center">
 
@@ -7,77 +7,38 @@
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-**A modern, sleek portfolio website for Egeh Agency web agency**
+**Egeh Agency - Your Partner in Digital Excellence**
 
-*Stunning dark theme - Purple/Pink gradients - Smooth animations - Fully responsive*
+*Modern Web Development - Stunning UI/UX - Mobile Apps - Digital Solutions*
+
+[Visit Our Website](https://suhayblegend.github.io/Huwaal-Tech/)
 
 </div>
 
 ---
 
-## Features
+## About Us
 
-- **Modern Dark Theme** - Sleek design with purple/pink gradient accents
-- **Fully Responsive** - Looks great on all devices
-- **Smooth Animations** - Engaging scroll and hover effects
-- **Project Showcases** - Interactive portfolio with live previews
-- **Case Studies** - Detailed project breakdowns
-- **Team Section** - Meet the talented team
-- **Contact Form** - Easy way for clients to reach out
-- **Fast & Lightweight** - Pure HTML, CSS, and JavaScript
+Egeh Agency is a full-service creative web agency specializing in stunning digital experiences. We build platforms that make an impact - from university admissions systems connecting students worldwide, to social platforms enabling communities to connect and give.
 
-## Preview
+Our mission is simple: create powerful digital solutions that drive real results. Whether it's a community platform, an e-commerce site, or a corporate web presence, we bring passion and precision to every project.
 
-| Hero Section | Portfolio Grid |
-|:---:|:---:|
-| Dark gradient hero with animated elements | Interactive project cards with hover effects |
+## What We Do
 
-## Tech Stack
+- **Web Development** - Custom websites and web applications
+- **UI/UX Design** - Beautiful, user-centered design
+- **Mobile Apps** - Cross-platform mobile solutions
+- **E-Commerce** - Online stores that convert
+- **Branding** - Complete brand identity packages
 
-- **HTML5** - Semantic markup
-- **CSS3** - Modern features (Grid, Flexbox, Variables, Animations)
-- **JavaScript (ES6+)** - Vanilla JS for interactivity
-- **Fonts** - Inter & Space Grotesk
-
-## Project Structure
-
-```
-EGEH-Tech/
-+-- index.html          # Main landing page
-+-- case-studies.html   # All case studies
-+-- case-*.html         # Individual case study pages
-+-- privacy.html        # Privacy policy
-+-- terms.html          # Terms of service
-+-- css/
-�   +-- style.css       # All styles
-+-- js/
-�   +-- main.js         # JavaScript functionality
-+-- assets/             # Images and media
-```
-
-## Quick Start
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/suhayblegend/EGEH-Tech.git
-   ```
-
-2. **Open in browser**
-   ```bash
-   cd EGEH-Tech
-   # Open index.html in your browser
-   # Or use Live Server in VS Code
-   ```
-
-## Featured Projects
+## Our Work
 
 | Project | Description |
 |---------|-------------|
-| **Walaal Connect** | Social networking platform |
+| **Walaal Connect** | Social networking platform for communities |
 | **UNISOM Admissions** | University admissions system |
 | **Dua Exchange** | Islamic dua sharing platform |
-| **Egeh Agency** | Agency website |
-| **Fimam Jewels** | Jewelry e-commerce store |
+| **Fimam Jewels** | Luxury jewelry e-commerce store |
 | **SomStruc** | Construction company website |
 | **Purity Guard** | Chrome extension for content filtering |
 | **Chateo** | Flutter messaging application |
@@ -89,18 +50,23 @@ EGEH-Tech/
 - **Fardowso Omar** - Graphic Designer
 - **Welly** - UI/UX Designer
 
-## License
+## Tech Stack
 
-This project is open source and available under the [MIT License](LICENSE).
+- **Frontend**: HTML5, CSS3, JavaScript (ES6+)
+- **Frameworks**: React, Flutter, WordPress
+- **Design**: Figma, Adobe Creative Suite
+- **Tools**: Git, VS Code, Chrome DevTools
 
-## Contact
+## Contact Us
 
-Email: suhaybdahir22@gmail.com
+Ready to start your project? Get in touch!
+
+**Email**: suhaybdahir22@gmail.com
 
 ---
 
 <div align="center">
 
-**Made with love by Egeh Agency**
+**Egeh Agency - Building Digital Futures**
 
 </div>
