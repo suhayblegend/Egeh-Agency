@@ -2551,34 +2551,38 @@ section {
     color: var(--primary-light);
 }
 
-/* Case View Button */
-.case-view-btn {
+/* View Case Study Button */
+.view-case-btn {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
-    margin-top: 25px;
-    padding: 14px 28px;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+    padding: 16px 32px;
     background: var(--gradient-primary);
     color: white;
-    font-weight: 600;
-    font-size: 0.95rem;
+    font-weight: 700;
+    font-size: 1rem;
     text-decoration: none;
     border-radius: var(--radius-full);
     transition: all 0.3s ease;
-    box-shadow: 0 4px 20px rgba(99, 102, 241, 0.3);
+    box-shadow: 0 4px 25px rgba(99, 102, 241, 0.4);
+    border: 2px solid transparent;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
-.case-view-btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 30px rgba(99, 102, 241, 0.5);
+.view-case-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 40px rgba(99, 102, 241, 0.6);
+    background: linear-gradient(135deg, #7c7ff2 0%, #f472b6 100%);
 }
 
-.case-view-btn::after {
-    content: '→';
+.view-case-btn svg {
     transition: transform 0.3s ease;
 }
 
-.case-view-btn:hover::after {
+.view-case-btn:hover svg {
     transform: translateX(5px);
 }
 
@@ -2881,6 +2885,27 @@ section {
 .case-live-btn:hover {
     transform: translateY(-3px);
     box-shadow: 0 15px 40px rgba(var(--case-color, var(--primary)), 0.3);
+}
+
+/* Case Preview Section */
+.case-preview-section {
+    padding: 0 0 60px;
+    margin-top: -50px;
+}
+
+.case-preview-image {
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: 0 25px 80px rgba(0, 0, 0, 0.4);
+    border: 1px solid var(--border-color);
+}
+
+.case-preview-image img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 /* Case Single Content */
