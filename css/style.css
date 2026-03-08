@@ -2551,6 +2551,37 @@ section {
     color: var(--primary-light);
 }
 
+/* Case View Button */
+.case-view-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 25px;
+    padding: 14px 28px;
+    background: var(--gradient-primary);
+    color: white;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+    border-radius: var(--radius-full);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(99, 102, 241, 0.3);
+}
+
+.case-view-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(99, 102, 241, 0.5);
+}
+
+.case-view-btn::after {
+    content: '→';
+    transition: transform 0.3s ease;
+}
+
+.case-view-btn:hover::after {
+    transform: translateX(5px);
+}
+
 /* Case Results */
 .case-results {
     display: flex;
