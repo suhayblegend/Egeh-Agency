@@ -1,4 +1,4 @@
-﻿# Egeh Agency - Creative Web Agency
+﻿# Egeh Agency - Modern Web Agency Portfolio
 
 <div align="center">
 
@@ -7,11 +7,9 @@
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-**Egeh Agency - Your Partner in Digital Excellence**
+**Modern Web Agency Portfolio | Stunning dark theme with purple/pink gradients, smooth animations, and responsive design. Built with HTML5, CSS3 & Vanilla JavaScript.**
 
-*Modern Web Development - Stunning UI/UX - Mobile Apps - Digital Solutions*
-
-[Visit Our Website](https://suhayblegend.github.io/Huwaal-Tech/)
+[Visit Our Website](https://suhayblegend.github.io/Egeh-Agency/)
 
 </div>
 
