@@ -859,8 +859,25 @@ section {
 
 .service-description {
     color: var(--text-secondary);
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     line-height: 1.7;
+}
+
+.service-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 25px 0;
+}
+
+.service-features li {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    padding: 6px 0;
+    transition: var(--transition-normal);
+}
+
+.service-card:hover .service-features li {
+    color: var(--text-secondary);
 }
 
 .service-link {
@@ -882,6 +899,43 @@ section {
 
 .service-link:hover svg {
     transform: translateX(5px);
+}
+
+/* Services CTA */
+.services-cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 80px;
+    padding: 50px;
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(236, 72, 153, 0.1) 100%);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+}
+
+.services-cta-content h3 {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.services-cta-content p {
+    color: var(--text-secondary);
+    max-width: 500px;
+}
+
+@media (max-width: 768px) {
+    .services-cta {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 30px;
+    }
+    
+    .services-cta-content p {
+        max-width: 100%;
+    }
 }
 
 /* Portfolio Section */
