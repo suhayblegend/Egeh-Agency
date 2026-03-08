@@ -1453,12 +1453,66 @@ section {
 }
 
 .about-image {
+    position: relative;
     border-radius: var(--radius-lg);
     overflow: hidden;
+    padding: 4px;
+    background: linear-gradient(135deg, var(--primary), var(--secondary), var(--accent), var(--primary));
+    background-size: 300% 300%;
+    animation: borderGradient 4s ease infinite;
+    box-shadow: 
+        0 0 25px rgba(99, 102, 241, 0.3),
+        0 0 50px rgba(236, 72, 153, 0.15);
+    transition: var(--transition-normal);
+}
+
+.about-image::before {
+    content: '';
+    position: absolute;
+    inset: -4px;
+    border-radius: calc(var(--radius-lg) + 4px);
+    background: linear-gradient(135deg, var(--primary), var(--secondary), var(--accent), var(--primary));
+    background-size: 300% 300%;
+    animation: borderGradient 4s ease infinite;
+    z-index: -1;
+    opacity: 0.4;
+    filter: blur(12px);
+}
+
+.about-image:hover {
+    transform: translateY(-5px);
+    box-shadow: 
+        0 0 35px rgba(99, 102, 241, 0.5),
+        0 0 70px rgba(236, 72, 153, 0.3);
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: calc(var(--radius-lg) - 4px);
+    transition: var(--transition-normal);
+}
+
+.about-image:hover img {
+    transform: scale(1.03);
 }
 
 .about-image-1 {
     grid-column: span 2;
+}
+
+.about-image-1 img {
+    aspect-ratio: 16/10;
+}
+
+.about-image-2 img,
+.about-image-3 img {
+    aspect-ratio: 1;
+}
+
+.about-image-2 img {
+    object-position: center top;
 }
 
 .image-placeholder {
