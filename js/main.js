@@ -449,60 +449,48 @@ const imageObserver = new IntersectionObserver((entries, observer) => {
 
 lazyImages.forEach(img => imageObserver.observe(img));
 
-// ===== Scroll to Top Button =====
-const scrollTopBtn = document.createElement('button');
-scrollTopBtn.className = 'scroll-top-btn';
-scrollTopBtn.innerHTML = `
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <path d="M12 19V5M5 12l7-7 7 7"/>
-    </svg>
-`;
-scrollTopBtn.style.cssText = `
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    width: 50px;
-    height: 50px;
-    background: linear-gradient(135deg, #6366f1, #ec4899);
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease;
-    z-index: 999;
-    box-shadow: 0 4px 20px rgba(99, 102, 241, 0.4);
-`;
+// ===== Back to Top Button =====
+const backToTopBtn = document.getElementById('backToTop');
 
-document.body.appendChild(scrollTopBtn);
-
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 500) {
-        scrollTopBtn.style.opacity = '1';
-        scrollTopBtn.style.visibility = 'visible';
-    } else {
-        scrollTopBtn.style.opacity = '0';
-        scrollTopBtn.style.visibility = 'hidden';
-    }
-});
-
-scrollTopBtn.addEventListener('click', () => {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
+if (backToTopBtn) {
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 500) {
+            backToTopBtn.classList.add('visible');
+        } else {
+            backToTopBtn.classList.remove('visible');
+        }
     });
+
+    backToTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+}
+
+// ===== Scroll Animations =====
+const animateOnScrollElements = document.querySelectorAll('.section-header, .service-card, .portfolio-item, .team-card, .about-content, .about-visual, .contact-info, .contact-form-wrapper, .testimonial-card, .trusted-logos');
+
+const scrollObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('animate-on-scroll', 'animated');
+            scrollObserver.unobserve(entry.target);
+        }
+    });
+}, {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
 });
 
-scrollTopBtn.addEventListener('mouseenter', () => {
-    scrollTopBtn.style.transform = 'translateY(-5px)';
-});
-
-scrollTopBtn.addEventListener('mouseleave', () => {
-    scrollTopBtn.style.transform = 'translateY(0)';
+animateOnScrollElements.forEach((el, index) => {
+    el.classList.add('animate-on-scroll');
+    // Add stagger effect for grid items
+    if (el.classList.contains('service-card') || el.classList.contains('portfolio-item') || el.classList.contains('team-card')) {
+        el.style.transitionDelay = `${(index % 6) * 0.1}s`;
+    }
+    scrollObserver.observe(el);
 });
 
 // ===== Initialize =====
