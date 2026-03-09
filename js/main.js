@@ -3,6 +3,10 @@
  * Handles all interactive functionality
  */
 
+// ===== Device Detection =====
+const isTouchDevice = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0);
+const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
 // ===== DOM Elements =====
 const preloader = document.getElementById('preloader');
 const navbar = document.getElementById('navbar');
@@ -20,15 +24,20 @@ const testimonialDots = document.getElementById('testimonial-dots');
 const contactForm = document.getElementById('contact-form');
 const statNumbers = document.querySelectorAll('.stat-number');
 
+// ===== Add touch class to body for CSS targeting =====
+if (isTouchDevice) {
+    document.body.classList.add('touch-device');
+}
+
 // ===== Preloader =====
 window.addEventListener('load', () => {
     setTimeout(() => {
         preloader.classList.add('loaded');
-    }, 1500);
+    }, isMobile ? 1000 : 1500); // Faster loading on mobile
 });
 
-// ===== Custom Cursor =====
-if (cursor && cursorFollower) {
+// ===== Custom Cursor (Desktop Only) =====
+if (cursor && cursorFollower && !isTouchDevice) {
     document.addEventListener('mousemove', (e) => {
         cursor.style.left = e.clientX + 'px';
         cursor.style.top = e.clientY + 'px';
@@ -81,7 +90,48 @@ if (navToggle && navMenu) {
             document.body.style.overflow = '';
         });
     });
+    
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (navMenu.classList.contains('active') && 
+            !navMenu.contains(e.target) && 
+            !navToggle.contains(e.target)) {
+            navToggle.classList.remove('active');
+            navMenu.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    });
+    
+    // Close menu on escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && navMenu.classList.contains('active')) {
+            navToggle.classList.remove('active');
+            navMenu.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    });
 }
+
+// ===== Smooth Scroll for iOS =====
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        
+        const target = document.querySelector(targetId);
+        if (target) {
+            e.preventDefault();
+            const headerOffset = 80;
+            const elementPosition = target.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+            
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
+        }
+    });
+});
 
 // ===== Active Navigation Link =====
 function setActiveLink() {
@@ -260,6 +310,34 @@ if (testimonialsTrack) {
     testimonialsTrack.addEventListener('mouseleave', () => {
         testimonialInterval = setInterval(nextTestimonial, 5000);
     });
+    
+    // Touch swipe support for testimonials
+    let touchStartX = 0;
+    let touchEndX = 0;
+    
+    testimonialsTrack.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+        clearInterval(testimonialInterval);
+    }, { passive: true });
+    
+    testimonialsTrack.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+        testimonialInterval = setInterval(nextTestimonial, 5000);
+    }, { passive: true });
+    
+    function handleSwipe() {
+        const swipeThreshold = 50;
+        const diff = touchStartX - touchEndX;
+        
+        if (diff > swipeThreshold) {
+            // Swiped left - next
+            nextTestimonial();
+        } else if (diff < -swipeThreshold) {
+            // Swiped right - prev
+            prevTestimonial();
+        }
+    }
 }
 
 // ===== Contact Form =====
